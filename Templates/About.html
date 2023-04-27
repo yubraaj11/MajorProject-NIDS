@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <title>About Us</title>
+
+
+    <style>
+      /* .body-class{
+        background-color: rgb(185, 247, 247);
+      } */
+        h1,h2{
+            text-align: center;
+        }
+        footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contributors {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contributors li {
+  margin: 0 10px;
+}
+.project-description {
+  text-align: center;
+}
+
+.project-description p {
+  display: inline-block;
+}
+
+.download-btn {
+    background-color: rgba(255, 229, 79, 0.767); /* Red background color */
+    color: #000000;
+    /* display: flex; */
+    /* margin: auto; */
+    align-items: center; /* Text color */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; 
+    display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);/* Remove underline */
+  }
+
+  /* Hover effect */
+  .download-btn:hover {
+    background-color: rgba(73, 63, 221, 0.637);
+        color: white;  }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="NIDS" href="/">NIDS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/About">About <span class="sr-only">(current)</span></a>
+          </li>
+
+        </div>
+      </nav>
+      <div class="body-class">
+        <div class="project-description">
+          <h2>Network Intrusion Detection System</h2>
+          <br>
+          <p>Welcome to our project! Our project deals with creating a solution for detecting network intrusions using machine learning algorithms in this world of ever increasing connectivity.</p>
+          <p>As technology advances, network security is becoming increasingly important. The threat of cyber attacks on businesses, organizations, and individuals is a very real one, and we believe that machine learning can play a crucial role in preventing them. Our project aims to leverage the power of machine learning algorithms to detect and classify network intrusions, forming a layer of security for the network.</p>
+          <p>Our project utilizes various Machine learning algorithms, python and other tools to create a robust system that is not only intuitive to use but also powerful enough to assist and aid anyone looking to bolster their network security. It uses a t-shark wrapper known as Pyshark, to sniff and parse packets, converts the resulting .pcap file to a KDD dataset equivalent and then uses a ML model to detect any anomalies that may be present.</p>
+          <p>We believe that our project will not only help protect businesses and organizations from potential cyber threats but also contribute to the broader goal of creating a safer and more secure online environment for everyone. We are committed to staying up-to-date with the latest trends and developments in machine learning and cybersecurity to ensure further improvements to our system.</p>
+          <p>Thank you for visiting our project page, and we look forward to contributing to a more secure digital world through our work.</p>
+        </div>
+      </div>
+
+      <!-- <a href="./Document/NIDS MAJOR FINAL.pdf" download class="download-btn">Project Paper</a> -->
+
+      <footer>
+        <div class="container">
+          <p>© 2023 Network Intrusion Detection System</p>
+          <ul class="contributors">
+            <li>Pranjal Bhatta</li>
+            <li>Saransh Bhatta</li>
+            <li>Sudhanshu Joshi </li>
+            <li>Yubraj Sigdel</li>
+          </ul>
+        </div>
+      </footer>
+      
+
+    </body>
+  </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictions</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdf5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predictions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>Prediction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set row = namespace(index=0) %}
+            {% for prediction in predictions %}
+            {% set row.index = row.index + 1 %}
+            <tr>
+                <td>{{ row.index }}</td>
+                <td>{{ prediction }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="/">Go back to home page</a>
+</body>
+</html>
